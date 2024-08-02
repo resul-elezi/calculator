@@ -11,10 +11,13 @@
 			<div class="calculator">
 				<form>
 					<div class="display">
-						<input type="text" name="display">
+						<input type="text" name="display" id="display">
 					</div>
 					<div>
-						<input type="button" value="AC" onclick="display.value = ' ' " class="operator">
+						<input type="button" value="AC" 
+						onclick="display.value = ' ' "
+						class="operator" 
+						id="ac">
 						<input type="button" value="DE" onclick="display.value = display.value.toString().slice(0, -1)  "  class="operator">
 						<input type="button" value="." onclick="display.value += '.' "  class="operator">
 						<input type="button" value="/" onclick="display.value += '/' "  class="operator">
@@ -45,6 +48,6 @@
 				</form>
 			</div>
 		</div>
-		<script src="script.js></script>
+		<script src="script.js"></script>
 	</body>
 </html>
